@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marmite the dog</title>
+    <link rel="canonical" href="https://marmite.dog" />
+    <style>
+      @font-face {
+        font-family: "virgil";
+        src: url("./font.woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+    <style>
+      :root {
+        --bg: #f3fbf2;
+        --fg: #fefff2;
+        --green: #daf3d5;
+        --brown: #402800;
+        font-family: "virgil";
+      }
+
+      body {
+        background-color: var(--bg);
+        opacity: 1;
+        background-image: linear-gradient(#daf3d5 3px, transparent 3px),
+          linear-gradient(90deg, #daf3d5 3px, transparent 3px),
+          linear-gradient(#daf3d5 1.5px, transparent 1.5px),
+          linear-gradient(90deg, #daf3d5 1.5px, #f3fbf2 1.5px);
+        background-size:
+          75px 75px,
+          75px 75px,
+          15px 15px,
+          15px 15px;
+        background-position:
+          -3px -3px,
+          -3px -3px,
+          -1.5px -1.5px,
+          -1.5px -1.5px;
+        margin: 0;
+
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 600px;
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 24px;
+        color: var(--brown);
+        display: flex;
+        flex-direction: column;
+        background: #fffff9;
+        padding: 20px;
+        transform: rotate(-2deg);
+        border-radius: 3px;
+        filter: drop-shadow(#0007 2px 2px 3px);
+      }
+
+      .container p {
+        transform: rotate(-2deg);
+        max-width: 500px;
+        padding-left: 10px;
+      }
+
+      .container p .big {
+        font-size: 48px;
+      }
+
+      .container h1 {
+        line-height: 0;
+        margin: 0;
+      }
+
+      .container #beef {
+        max-width: 100%;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img id="beef" src="./beef_web.jpg" alt="Marmite the dog" />
+      <p>
+        <span class="big">Marmite</span><br />
+        Undisputed good boy, smells like beef
+      </p>
+    </div>
+  </body>
+</html>
